@@ -1,0 +1,32 @@
+Grön IT AB
+    Kompetens
+        Programmering
+            Haskell
+            Elm
+            HTML
+            Javascript
+            jQuery
+            React
+            React Native
+            Swift
+            Objective C
+        
+        Infrastruktur
+            Kubernetes
+            Docker
+            Nginx
+            Apache
+            php-fpm
+            haproxy
+            Rådgivning
+        
+        Allmänt
+            Systemutveckling
+    
+    Portfölj
+        Fornbyäventyret
+            https://fornbyn.kvandring.se
+
+    Kontaktmetoder
+        E-post
+            hej@mikael.green
