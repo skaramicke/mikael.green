@@ -7,7 +7,7 @@ networks:
 services:
   
   backend:
-    image: registry.mikael.green/mikael.green:latest
+    image: registry.mikael.green/mikaelgreen:latest
     networks:
       - proxy
     deploy:
