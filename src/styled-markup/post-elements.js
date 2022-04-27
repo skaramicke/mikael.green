@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const breakpoint = 768
+
 const eoSide = 28
 const eoConstant = eoSide / 53.9
 const eoContainerWidth = eoConstant * 53.9
@@ -9,7 +10,8 @@ const eoPhotoWidth = eoConstant * 46
 const eoPhotoHeight = eoConstant * 47
 const eoPhotoBorderThickness = 0.075
 const eoPolaroidPatternScale = 0.04
-const ccSide = 50
+
+const ccSide = 90
 const ccConstant = ccSide / 53.9
 const ccContainerWidth = ccConstant * 53.9
 const ccContainerHeight = ccConstant * 66.6
@@ -158,9 +160,9 @@ export const TextContainer = styled.p`
     padding: 0 ${(eoContainerWidth - eoPhotoWidth) / 2}vw;
   }
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 2vw;
+  font-size: ${ccSide/24}vw;
   @media (min-width: ${breakpoint}px) {
-    font-size: 1.12vw;
+    font-size: ${eoSide/24}vw;
   }
   color: #444;
 `
