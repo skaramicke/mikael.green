@@ -61,7 +61,7 @@ export const Polaroid = styled.div`
     &:nth-child(even) {
       align-self: flex-end;
     }
-    margin-bottom: -${ccContainerHeight * 0.25}vw;
+    margin-bottom: -${eoContainerHeight * 0.5}vw;
     width: ${eoContainerWidth}vw;
     height: ${eoContainerHeight}vw;
   }
