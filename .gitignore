@@ -1,0 +1,6 @@
+/public/scripts/app.js
+/node_modules
+/public/app.*
+/public/posts
+/public/photos
+/public/icons
