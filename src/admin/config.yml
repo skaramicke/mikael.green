@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: skaramicke/mikael.green
+  branch: netlifytest
+
+media_folder: "/src/photos"
+public_folder: "/photos"
+
+collections:
+  - name: blog
+    label: Blog
+    folder: "/src/posts"
+    create: true
+    extension: json
+    format: json
+    fields:
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
+      - { name: images, label: Images, widget: list, fields: [{ name: image, label: Image, widget: image }] }
+    slug: "{{year}}-{{month}}-{{day}} {{hour}}:{{minute}}"

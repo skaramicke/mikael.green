@@ -1,3 +1,4 @@
+const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
@@ -36,7 +37,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/static_templates/index.html',
     }),
-    new WebpackManifestPlugin({})
+    new WebpackManifestPlugin({}),
+    new CopyPlugin({
+      patterns: [
+        { from: './src/admin', to: 'admin' },
+      ]
+    })
   ],
   devtool: 'cheap-module-source-map',
   devServer: {
