@@ -34,7 +34,8 @@ class PhotosPacker {
           fs.readFileSync(path.resolve('./', 'src', 'posts', post), 'utf8')
         )
         for (const image of postData.images) {
-          sourcePhotos.push(`${image}.jpg`)
+
+          sourcePhotos.push(`${path.basename(image)}`)
         }
       }
       
