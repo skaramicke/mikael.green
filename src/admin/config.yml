@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: skaramicke/mikael.green
-  branch: netlifytest
+  branch: main
 
 media_folder: "/src/photos"
 public_folder: "/photos"
