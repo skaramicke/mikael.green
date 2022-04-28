@@ -17,7 +17,7 @@ const Post = ({ post, index = 0 }) => {
         {post.images.map(
           (image, index) =>
             visiblePhoto == index && (
-              <Image key={index} src={`/photos/${image}-square.jpg`} />
+              <Image key={index} src={`${image.replace('.jpg', '-square.jpg')}`} />
             )
         )}
       </PhotoContainer>
