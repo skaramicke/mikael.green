@@ -1,9 +1,9 @@
 backend:
-  name: github
+  name: gitlab
   repo: skaramicke/mikael.green
   branch: main
-  base_url: https://mikael-green-netlify-github-oauth.vercel.app/
-  auth_endpoint: /auth
+  auth_type: implicit
+  app_id: 579f03db4c8dcab31eb03b4f69a897d59d9c9e7f2505591e97d80cb0cb474a8b
 
 media_folder: "/src/photos"
 public_folder: "/photos"
