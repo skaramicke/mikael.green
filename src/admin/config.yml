@@ -23,13 +23,11 @@ collections:
       - name: date
         label: Date
         widget: datetime
-      
+
       - name: images
         label: Images
-        widget: list
-        fields: 
-          - name: image
-            label: Image
-            widget: image
+        widget: "list"
+        summary: '{{fields.images}}'
+        field: {label: Image, name: image, widget: image}
        
     slug: '{{year}}-{{month}}-{{day}} {{hour}}:{{minute}}'
