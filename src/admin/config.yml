@@ -17,19 +17,19 @@ collections:
     format: json
     fields:
       
-      - name: title,
+      - name: title
         label: Title
       
-      - name: date,
-        label: Date,
+      - name: date
+        label: Date
         widget: datetime
       
-      - name: images,
-        label: Images,
-        widget: list,
+      - name: images
+        label: Images
+        widget: list
         fields: 
-          - name: image,
-            label: Image,
+          - name: image
+            label: Image
             widget: image
        
     slug: '{{year}}-{{month}}-{{day}} {{hour}}:{{minute}}'
