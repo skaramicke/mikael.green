@@ -59,7 +59,7 @@ const FilmCartridgeContainer = styled.div`
     height: ${s.d.outerDiameter}vw;
   }
 `
-const FilmCartdigeTop = styled.div`
+const FilmCartdigeTop = styled.a`
   position: absolute;
   right: 0;
   background-color: #000;
@@ -144,7 +144,7 @@ const FilmCartridge = () => {
         <Green href="https://mikael.green" />
         <Blue href="https://mikael.blue" />
       </FilmCartridgeBody>
-      <FilmCartdigeTop />
+      <FilmCartdigeTop href="https://mikael.photos" />
     </FilmCartridgeContainer>
   )
 }
