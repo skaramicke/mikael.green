@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { FilmStrip, Container } from './styled-markup/app-elements'
 import Post from './post'
+import FilmCartridge from './FilmCartridge'
 
 const App = () => {
   const [posts, setPosts] = React.useState([])
@@ -43,6 +44,7 @@ const App = () => {
   return (
     <div>
       <FilmStrip />
+      <FilmCartridge />
       <Container>
         {posts.map((post, index) => (
           <Post post={post} key={index} index={index} />

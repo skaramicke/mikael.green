@@ -46,6 +46,7 @@ module.exports = {
   ],
   devtool: 'cheap-module-source-map',
   devServer: {
+    host: 'local.red',
     static: {
       directory: publicPath
     },

@@ -50,7 +50,7 @@ export const Polaroid = styled.div`
   border-radius: 0.2vw;
   box-shadow: 0.2vw 0.2vw 0.2vw 0.1vw #0004,
     inset 0.15vw 0.15vw 0.2vw 0.2vw #fff;
-  margin: 2vw;
+  margin: 2vw 0;
   width: ${ccContainerWidth}vw;
   height: ${ccContainerHeight}vw;
   align-self: center;
