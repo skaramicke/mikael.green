@@ -97,7 +97,7 @@ const FilmCartridgeBody = styled.div`
   }
 `
 
-const Color = styled.div`
+const Color = styled.a`
   height: 100%;
   width: 30%;
   flex-grow: 1;
@@ -106,9 +106,9 @@ const Color = styled.div`
 const gradient =
   'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent, rgba(0, 0, 0, 0.5))'
 
-const Red = () => {
+const Red = (props) => {
   return (
-    <Color
+    <Color {...props}
       style={{
         background: `#a63d40 ${gradient}`,
       }}
@@ -116,9 +116,9 @@ const Red = () => {
   )
 }
 
-const Green = () => {
+const Green = (props) => {
   return (
-    <Color
+    <Color {...props}
       style={{
         background: `#6a8d73 ${gradient}`
       }}
@@ -126,9 +126,9 @@ const Green = () => {
   )
 }
 
-const Blue = () => {
+const Blue = (props) => {
   return (
-    <Color
+    <Color {...props}
       style={{
         background: `#0b4f6c ${gradient}`,
       }}
@@ -140,9 +140,9 @@ const FilmCartridge = () => {
   return (
     <FilmCartridgeContainer>
       <FilmCartridgeBody>
-        <Red />
-        <Green />
-        <Blue />
+        <Red href="https://mikael.red" />
+        <Green href="https://mikael.green" />
+        <Blue href="https://mikael.blue" />
       </FilmCartridgeBody>
       <FilmCartdigeTop />
     </FilmCartridgeContainer>
