@@ -18,7 +18,7 @@ export const FilmStrip = styled.div`
   position: fixed;
   margin-left: auto;
   margin-right: auto;
-  top: 1vw;
+  top: 3vw;
   bottom: 0;
   left: 0;
   right: 0;
@@ -29,6 +29,7 @@ export const FilmStrip = styled.div`
   width: ${filmViewWidth.mobile}vw;
   --size: 1.875vw;
   @media (min-width: ${breakpoint}px) {
+    top: 1vw;
     width: ${filmViewWidth.desktop}vw;
     --size: 0.25vw;
   }
