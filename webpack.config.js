@@ -40,8 +40,7 @@ module.exports = {
     new WebpackManifestPlugin({}),
     new CopyPlugin({
       patterns: [
-        { from: './src/admin', to: 'admin' },
-        { from: './src/files', to: 'files' },
+        { from: './src/admin', to: 'admin' }
       ]
     })
   ],
