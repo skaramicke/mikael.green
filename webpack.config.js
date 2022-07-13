@@ -41,6 +41,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: './src/admin', to: 'admin' },
+        { from: './src/files', to: 'files' },
       ]
     })
   ],
