@@ -1,9 +1,9 @@
 backend:
-  name: gitlab
+  name: github
   repo: skaramicke/mikael.green
   branch: main
-  auth_type: implicit
-  app_id: 579f03db4c8dcab31eb03b4f69a897d59d9c9e7f2505591e97d80cb0cb474a8b
+  base_url: https://auth.mikael.green
+  auth_endpoint: /auth
 
 media_folder: 'src/photos'
 public_folder: '/photos'
